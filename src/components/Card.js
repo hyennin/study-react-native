@@ -19,7 +19,7 @@ const Card = () => {
 					<Image source={image} style={styles.imageBox}/>
 				</View>
 			</View>
-			<View style={styles.bottom}>
+			<View style={styles.content2}>
 				<TouchableOpacity style={styles.comment}>
 					<Image source={chat}/>
 					<Text style={styles.number}>0,000</Text>
@@ -29,15 +29,16 @@ const Card = () => {
 					<Text style={styles.number}>0,000</Text>
 				</TouchableOpacity>
 			</View>
+			<View style={styles.bottom}></View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
 	container: {
-		marginTop: 200,
 		width: '100%',
 		height: 324,
+		marginTop: 12,
 		borderWidth: 1,
 		borderColor: '#E9E9E9',
 		borderRadius: 12
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
 		borderColor: '#E7E7E7',
 		borderRadius: 10
 	},
-	bottom: {
+	content2: {
 		height: 50,
 		flexDirection: 'row',
 		justifyContent: 'flex-end',
@@ -101,6 +102,9 @@ const styles = StyleSheet.create({
 		marginLeft: 7,
 		fontSize: 12,
 		fontWeight: 400
+	},
+	bottom: {
+		marginTop: 30
 	}
 });
 

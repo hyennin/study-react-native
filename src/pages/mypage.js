@@ -50,7 +50,7 @@ const MyPage = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(250, 250, 250, 1)',
     alignItems: 'center',
     justifyContent: 'center',
     marginLeft: 16,
@@ -63,8 +63,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     marginTop: -200,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     borderWidth: 1,
-    borderColor: '#E9E9E9',
+    borderColor: 'rgba(233, 233, 233, 1)',
     borderRadius: 16
   },
   textBox: {
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
   }, 
   grade: {
     fontSize: 12,
-    color: '#8A8A8A'
+    color: 'rgba(138, 138, 138, 1)'
   },
   name: {
     fontSize: 20,
@@ -88,8 +89,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     marginTop: 24,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     borderWidth: 1,
-    borderColor: '#E9E9E9',
+    borderColor: 'rgba(233, 233, 233, 1)',
     borderRadius: 16
   },
   contentBox: {
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
   hr: {
     width: '90%',
     borderBottomWidth: 1,
-    borderBottomColor: '#E9E9E9'
+    borderBottomColor: 'rgba(233, 233, 233, 1)'
   },
   competition: {
     width: '100%',
@@ -120,8 +122,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     marginTop: 24,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     borderWidth: 1,
-    borderColor: '#E9E9E9',
+    borderColor: 'rgba(233, 233, 233, 1)',
     borderRadius: 16
   },
   text: {

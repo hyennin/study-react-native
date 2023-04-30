@@ -39,8 +39,9 @@ const styles = StyleSheet.create({
 		width: '100%',
 		height: 324,
 		marginTop: 12,
+		backgroundColor: 'rgba(255, 255, 255, 1)',
 		borderWidth: 1,
-		borderColor: '#E9E9E9',
+		borderColor: 'rgba(233, 233, 233, 1)',
 		borderRadius: 12
 	},
 	header: {
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
 	date: {
 		marginLeft: 6,
 		fontSize: 12,
-		color: '#A7A7A7'
+		color: 'rgba(167, 167, 167, 1)'
 	},
 	content: {
 		marginLeft: 24,
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
 	text: {
 		fontSize: 14,
 		fontWeight: 400,
-		color: '#5A5A5A'
+		color: 'rgba(90, 90, 90, 1)'
 	},
 	imageContainer: {
 		flexDirection: 'row',
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
 		marginTop: 10,
 		marginLeft: 7,
 		borderWidth: 1,
-		borderColor: '#E7E7E7',
+		borderColor: 'rgba(233, 233, 233, 1)',
 		borderRadius: 10
 	},
 	content2: {

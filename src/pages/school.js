@@ -64,19 +64,19 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 14,
         fontWeight: 400,
-        color: '#A7A7A7'
+        color: 'rgba(138, 138, 138, 1)'
     },
     selectedHr: {
         width: '108%',
         marginTop: 16,
         borderBottomWidth: 2,
-        borderBottomColor: '#8A8A8A'
+        borderBottomColor: 'rgba(23, 227, 129, 1)'
     },
     hr: {
         width: '108%',
         marginTop: 16,
         borderBottomWidth: 1,
-        borderBottomColor: '#E9E9E9'
+        borderBottomColor: 'rgba(233, 233, 233, 1)'
     },
     scroll: {
         marginTop: 23

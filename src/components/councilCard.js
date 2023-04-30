@@ -4,7 +4,7 @@ import image from '../assets/image.png';
 import chat from '../assets/chat.png';
 import like from '../assets/like.png';
 
-const Card = () => {
+const CouncilCard = () => {
   return (
     <View style={styles.container}>
 			<View style={styles.header}>
@@ -109,4 +109,4 @@ const styles = StyleSheet.create({
 	}
 });
 
-export default Card;
+export default CouncilCard;

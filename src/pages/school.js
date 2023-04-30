@@ -1,5 +1,5 @@
 import { ScrollView, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import Card from '../components/Card';
+import CouncilCard from '../components/councilCard';
 
 const School = () => {
   return (
@@ -19,11 +19,11 @@ const School = () => {
             </TouchableOpacity>
         </View>
         <ScrollView style={styles.scroll}>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            <CouncilCard/>
+            <CouncilCard/>
+            <CouncilCard/>
+            <CouncilCard/>
+            <CouncilCard/>
         </ScrollView>
     </View>
   );

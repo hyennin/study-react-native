@@ -31,8 +31,10 @@ const School = () => {
 
 const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        height: '100%'
+        flex: 1,
+        marginLeft: 16,
+        marginRight: 16,
+        marginBottom: 40
     },
 	tab: {
 		width: '100%',
@@ -79,6 +81,6 @@ const styles = StyleSheet.create({
     scroll: {
         marginTop: 23
     }
-})
+});
 
 export default School;

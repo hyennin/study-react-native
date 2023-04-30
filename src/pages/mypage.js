@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    marginLeft: 16,
+    marginRight: 16
   },
   box1: {
     width: '100%',

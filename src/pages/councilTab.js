@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import CouncilCard from '../components/councilCard';
 
 const CouncilTab = () => {

@@ -4,8 +4,10 @@ import settings from '../assets/settings.png';
 import move from '../assets/move.png';
 import cup from '../assets/cup.png';
 import chat from '../assets/chat.png';
+import { useNavigation } from '@react-navigation/native';
 
 const MyPage = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
         <View style={styles.box1}>
@@ -16,7 +18,7 @@ const MyPage = () => {
                 <Text style={styles.name}>이름</Text>
             </View>
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => {navigation.navigate('Profile')}}>
             <Image source={settings}/>
           </TouchableOpacity>
         </View>

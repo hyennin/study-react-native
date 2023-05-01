@@ -43,7 +43,9 @@ const styles = StyleSheet.create({
 		borderRadius: 14
 	},
 	header: {
-		flexDirection: 'row'
+		width: '100%',
+		flexDirection: 'row',
+		marginLeft: 20
 	},
 	profile: {
 		width: 40,
@@ -74,30 +76,34 @@ const styles = StyleSheet.create({
 		marginLeft: -6
 	},
 	tag: {
-		paddingTop: 4,
-		paddingBottom: 4,
+		paddingTop: 2,
+		paddingBottom: 2,
 		paddingLeft: 6,
 		paddingRight: 6,
 		marginLeft: 6,
 		backgroundColor: 'rgba(23, 227, 129, 0.15)',
-		borderRadius: 4
+		borderRadius: 4,
+		fontSize: 12,
+		fontWeight: 400
 	},
 	bottom: {
 		width: '100%',
 		flexDirection: 'row',
-		justifyContent: 'center',
+		justifyContent: 'space-evenly',
 		alignItems: 'center',
+		marginTop: 12
 	},
 	dDayContainer: {
 		flexDirection: 'row',
 		justifyContent: 'center',
-		alignItems: 'space-between'
+		alignItems: 'center'
 	},
 	text: {
 		fontSize: 12,
 		fontWeight: 400
 	},
 	dDay: {
+		paddingLeft: 4,
 		fontSize: 20,
 		fontWeight: 500
 	},

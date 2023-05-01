@@ -1,30 +1,8 @@
 import { ScrollView, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import CouncilCard from '../components/councilCard';
 
-const School = () => {
+const CalendarTab = () => {
   return (
     <View style={styles.container}>
-        <View style={styles.tab}>
-            <TouchableOpacity style={styles.council}>
-                <Text style={styles.selectedText}>학생회</Text>
-                <View style={styles.selectedHr}/>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.calendar}>
-                <Text style={styles.text}>학사일정</Text>
-                <View style={styles.hr}/>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.map}>
-                <Text style={styles.text}>지도</Text>
-                <View style={styles.hr}/>
-            </TouchableOpacity>
-        </View>
-        <ScrollView style={styles.scroll}>
-            <CouncilCard/>
-            <CouncilCard/>
-            <CouncilCard/>
-            <CouncilCard/>
-            <CouncilCard/>
-        </ScrollView>
     </View>
   );
 }
@@ -32,9 +10,10 @@ const School = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginLeft: 16,
-        marginRight: 16,
-        marginBottom: 40
+        paddingLeft: 16,
+        paddingRight: 16,
+        paddingBottom: 40,
+        backgroundColor: 'rgba(255, 255, 255, 1)'
     },
 	tab: {
 		width: '100%',
@@ -77,10 +56,7 @@ const styles = StyleSheet.create({
         marginTop: 16,
         borderBottomWidth: 1,
         borderBottomColor: 'rgba(233, 233, 233, 1)'
-    },
-    scroll: {
-        marginTop: 23
     }
 });
 
-export default School;
+export default CalendarTab;

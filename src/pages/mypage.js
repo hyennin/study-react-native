@@ -16,13 +16,13 @@ const MyPage = ({navigation}) => {
                 <Text style={styles.name}>이름</Text>
             </View>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+          <TouchableOpacity onPress={() => navigation.navigate('프로필 설정')}>
             <Image source={settings}/>
           </TouchableOpacity>
         </View>
         <View style={styles.box2}>
           <View style={styles.contentBox}>
-            <TouchableOpacity style={styles.competition} onPress={() => navigation.navigate('Competition')}>
+            <TouchableOpacity style={styles.competition} onPress={() => navigation.navigate('공모전')}>
               <View style={styles.textBox}>
                 <Image source={cup}/>
                 <Text style={styles.text}>공모전</Text>
@@ -30,7 +30,7 @@ const MyPage = ({navigation}) => {
                 <Image source={move}/>
             </TouchableOpacity>
             <View style={styles.hr}/>
-            <TouchableOpacity style={styles.community} onPress={() => navigation.navigate('Community')}>
+            <TouchableOpacity style={styles.community} onPress={() => navigation.navigate('커뮤니티')}>
               <View style={styles.textBox}>
                 <Image source={chat}/>
                 <Text style={styles.text}>커뮤니티</Text>
@@ -39,7 +39,7 @@ const MyPage = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </View>
-        <TouchableOpacity style={styles.box3} onPress={() => navigation.navigate('BookBarcode')}>
+        <TouchableOpacity style={styles.box3} onPress={() => navigation.navigate('도서대출증')}>
             <Text style={styles.text2}>도서대출증</Text>
             <Image source={move}/>
         </TouchableOpacity>

@@ -4,10 +4,8 @@ import settings from '../assets/settings.png';
 import move from '../assets/move.png';
 import cup from '../assets/cup.png';
 import chat from '../assets/chat.png';
-import { useNavigation } from '@react-navigation/native';
 
-const MyPage = () => {
-  const navigation = useNavigation();
+const MyPage = ({navigation}) => {
   return (
     <View style={styles.container}>
         <View style={styles.box1}>
@@ -18,13 +16,13 @@ const MyPage = () => {
                 <Text style={styles.name}>이름</Text>
             </View>
           </View>
-          <TouchableOpacity onPress={() => {navigation.navigate('Profile')}}>
+          <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
             <Image source={settings}/>
           </TouchableOpacity>
         </View>
         <View style={styles.box2}>
           <View style={styles.contentBox}>
-            <TouchableOpacity style={styles.competition}>
+            <TouchableOpacity style={styles.competition} onPress={() => navigation.navigate('Competition')}>
               <View style={styles.textBox}>
                 <Image source={cup}/>
                 <Text style={styles.text}>공모전</Text>
@@ -32,7 +30,7 @@ const MyPage = () => {
                 <Image source={move}/>
             </TouchableOpacity>
             <View style={styles.hr}/>
-            <TouchableOpacity style={styles.community}>
+            <TouchableOpacity style={styles.community} onPress={() => navigation.navigate('Community')}>
               <View style={styles.textBox}>
                 <Image source={chat}/>
                 <Text style={styles.text}>커뮤니티</Text>
@@ -41,7 +39,7 @@ const MyPage = () => {
             </TouchableOpacity>
           </View>
         </View>
-        <TouchableOpacity style={styles.box3}>
+        <TouchableOpacity style={styles.box3} onPress={() => navigation.navigate('BookBarcode')}>
             <Text style={styles.text2}>도서대출증</Text>
             <Image source={move}/>
         </TouchableOpacity>
@@ -55,8 +53,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(250, 250, 250, 1)',
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: 16,
-    marginRight: 16
+    paddingLeft: 16,
+    paddingRight: 16
   },
   box1: {
     width: '100%',

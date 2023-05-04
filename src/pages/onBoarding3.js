@@ -1,15 +1,16 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
+import {  WithLocalSvg } from 'react-native-svg';
 
 const onBoarding3 = () => {
   return (
     <View style={styles.container}>
-        <Text style={styles.emoji}>👋</Text>
-        <Text style={styles.title}>반가워요 미림인!</Text>
-        <Text style={styles.content}>만나서 반가워요! 미림인을 위한</Text>
+        <Text style={styles.title}>같이 발야구 할 사람 구해요!</Text>
+        <Text style={styles.content}>커뮤니티 기능을 통해 미림인들과 빠르게</Text>
+        <Text style={styles.content}>소통할 수 있어요!</Text>
         <Text style={styles.textBox}>
-            <Text style={styles.content}>앱 서비스,</Text>
+            <Text style={styles.content}>그럼 지금 바로</Text>
             <Text style={styles.bold}>미리미</Text>
-            <Text style={styles.content}>입니다.</Text>
+            <Text style={styles.content}>를 시작해볼까요? 👀</Text>
         </Text>
         <View style={styles.dots}>
             <View style={styles.selectedDot}/>
@@ -44,7 +45,8 @@ const styles = StyleSheet.create({
         fontWeight: 400
     },
     textBox: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginTop: 146
     },
     bold: {
         fontSize: 16,
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
     dots: {
         width: 30,
         flexDirection: 'row',
-        marginTop: 173,
+        marginTop: 13,
         marginLeft: -6
     },
     selectedDot: {

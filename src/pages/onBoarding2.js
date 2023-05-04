@@ -1,25 +1,16 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import {  WithLocalSvg } from 'react-native-svg';
-import hello from '../assets/hello.svg';
 
-const onBoarding1 = () => {
+const onBoarding2 = () => {
   return (
     <View style={styles.container}>
-        <WithLocalSvg
-            style={styles.emoji}
-            width={140}
-            height={140}
-            asset={hello}/>
-        <Text style={styles.title}>반가워요 미림인!</Text>
-        <Text style={styles.content}>만나서 반가워요! 미림인을 위한</Text>
-        <Text style={styles.textBox}>
-            <Text style={styles.content}>앱 서비스,</Text>
-            <Text style={styles.bold}>미리미</Text>
-            <Text style={styles.content}>입니다.</Text>
-        </Text>
+        <Text style={styles.title}>오늘 급식 뭐였더라?</Text>
+        <Text style={styles.title}>이번주 학사 일정 뭐 있었더라?</Text>
+        <Text style={[styles.content, {marginTop: 12}]}>학교 생활하며 궁금했던 정보들이</Text>
+        <Text style={styles.content}>미리미에 다 있어요!</Text>
         <View style={styles.dots}>
-            <View style={styles.selectedDot}/>
             <View style={styles.dot}/>
+            <View style={styles.selectedDot}/>
             <View style={styles.dot}/>
         </View>
         <TouchableOpacity style={styles.button}><Text>넘어가기</Text></TouchableOpacity>
@@ -37,24 +28,15 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255, 255, 255, 1)'
     },
     emoji: {
-        marginTop: 140,
-        marginBottom: 36,
+        marginBottom: 36
     },
     title: {
-        marginBottom: 12,
         fontSize: 20,
         fontWeight: 700
     },
     content: {
         fontSize: 16,
         fontWeight: 400
-    },
-    textBox: {
-        flexDirection: 'row'
-    },
-    bold: {
-        fontSize: 16,
-        fontWeight: 500
     },
     dots: {
         width: 30,
@@ -87,4 +69,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default onBoarding1;
+export default onBoarding2;

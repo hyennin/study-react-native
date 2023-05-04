@@ -2,12 +2,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './navigation/StackNavigator';
-import OnBoarding1 from './src/pages/onBoarding1';
+import OnBoarding2 from './src/pages/onBoarding2';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <OnBoarding1/>
+      <OnBoarding2/>
     </NavigationContainer>
   );
 }

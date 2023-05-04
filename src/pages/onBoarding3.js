@@ -1,15 +1,9 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
-import {  WithLocalSvg } from 'react-native-svg';
-import hello from '../assets/hello.svg';
 
-const onBoarding1 = () => {
+const onBoarding3 = () => {
   return (
     <View style={styles.container}>
-        <WithLocalSvg
-            style={styles.emoji}
-            width={140}
-            height={140}
-            asset={hello}/>
+        <Text style={styles.emoji}>👋</Text>
         <Text style={styles.title}>반가워요 미림인!</Text>
         <Text style={styles.content}>만나서 반가워요! 미림인을 위한</Text>
         <Text style={styles.textBox}>
@@ -37,10 +31,10 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255, 255, 255, 1)'
     },
     emoji: {
-        marginTop: 140,
-        marginBottom: 36,
+        fontSize: 200
     },
     title: {
+        marginTop: 36,
         marginBottom: 12,
         fontSize: 20,
         fontWeight: 700
@@ -87,4 +81,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default onBoarding1;
+export default onBoarding3;

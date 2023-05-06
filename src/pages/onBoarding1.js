@@ -2,7 +2,7 @@ import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import {  WithLocalSvg } from 'react-native-svg';
 import hello from '../assets/hello.svg';
 
-const onBoarding1 = () => {
+const OnBoarding1 = ({navigation}) => {
   return (
     <View style={styles.container}>
         <WithLocalSvg
@@ -22,7 +22,7 @@ const onBoarding1 = () => {
             <View style={styles.dot}/>
             <View style={styles.dot}/>
         </View>
-        <TouchableOpacity style={styles.button}><Text>넘어가기</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('온보딩2')}><Text>넘어가기</Text></TouchableOpacity>
     </View>
   );
 }
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     },
     emoji: {
         marginTop: 140,
-        marginBottom: 36,
+        marginBottom: 36
     },
     title: {
         marginBottom: 12,
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     dots: {
         width: 30,
         flexDirection: 'row',
-        marginTop: 173,
+        marginTop: 180,
         marginLeft: -6
     },
     selectedDot: {
@@ -87,4 +87,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default onBoarding1;
+export default OnBoarding1;

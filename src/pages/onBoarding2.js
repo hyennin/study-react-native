@@ -1,9 +1,15 @@
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import {  WithLocalSvg } from 'react-native-svg';
+import face from '../assets/face.svg';
 
-const onBoarding2 = () => {
+const OnBoarding2 = ({navigation}) => {
   return (
     <View style={styles.container}>
+        <WithLocalSvg
+            style={styles.emoji}
+            width={140}
+            height={140}
+            asset={face}/>
         <Text style={styles.title}>오늘 급식 뭐였더라?</Text>
         <Text style={styles.title}>이번주 학사 일정 뭐 있었더라?</Text>
         <Text style={[styles.content, {marginTop: 12}]}>학교 생활하며 궁금했던 정보들이</Text>
@@ -13,7 +19,7 @@ const onBoarding2 = () => {
             <View style={styles.selectedDot}/>
             <View style={styles.dot}/>
         </View>
-        <TouchableOpacity style={styles.button}><Text>넘어가기</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('온보딩3')}><Text>넘어가기</Text></TouchableOpacity>
     </View>
   );
 }
@@ -28,6 +34,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255, 255, 255, 1)'
     },
     emoji: {
+        marginTop: 140,
         marginBottom: 36
     },
     title: {
@@ -41,7 +48,7 @@ const styles = StyleSheet.create({
     dots: {
         width: 30,
         flexDirection: 'row',
-        marginTop: 173,
+        marginTop: 150,
         marginLeft: -6
     },
     selectedDot: {
@@ -69,4 +76,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default onBoarding2;
+export default OnBoarding2;

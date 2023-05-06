@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image, useWindowDimensions } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, useWindowDimensions, Linking } from 'react-native';
 import background from '../assets/councilBg.png';
 import profile from '../assets/councilProfile.png';
 import music from '../assets/music.png';
@@ -67,9 +67,9 @@ const Council = () => {
                 <View style={styles.headerContents}>
                     <Image source={profile} style={styles.profileImg}/>
                     <View style={styles.buttonContainer}>
-                        <TouchableOpacity style={styles.button}><Image source={music}/></TouchableOpacity>
-                        <TouchableOpacity style={styles.button}><Image source={link}/></TouchableOpacity>
-                        <TouchableOpacity style={styles.button}><Image source={instagram}/></TouchableOpacity>
+                        <TouchableOpacity style={styles.button} onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSfm1yYfqXuk3cd5_1SWV9WbDCG4PW4C7ZOu1B5fKbutCZQnmw/viewform')}><Image source={music}/></TouchableOpacity>
+                        <TouchableOpacity style={styles.button} onPress={() => Linking.openURL('https://student-council-git-main-55soup.vercel.app/#/')}><Image source={link}/></TouchableOpacity>
+                        <TouchableOpacity style={styles.button} onPress={() => Linking.openURL('https://www.instagram.com/mirim_student')}><Image source={instagram}/></TouchableOpacity>
                     </View>
                     <Text style={styles.title}>안녕하세요! 32기 학생회입니다.</Text>
                     <Text style={styles.content}>안녕하세요! 32기 학생회입니다.</Text>

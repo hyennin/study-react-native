@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useWindowDimensions, Text } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
-import CouncilTab from './src/pages/councilTab';
-import CalendarTab from './src/pages/calendarTab';
-import MapTab from './src/pages/mapTab';
+import CouncilTab from '../components/councilTab';
+import CalendarTab from '../components/calendarTab';
+import MapTab from '../components/mapTab';
 
 const FirstRoute = () => (
   <CouncilTab/>
@@ -38,8 +38,8 @@ const TabViewExample = () => {
 			{...props}
 			indicatorStyle={{ backgroundColor: 'rgba(23, 227, 129, 1)' }}
 			style={{ backgroundColor: 'rgba(255, 255, 255, 1)'}}
-			renderLabel={({ route }) => (
-				<Text style={{ color: 'black' }}>
+			renderLabel={({ route, focused }) => (
+				<Text style={focused ? {color:'black'} : {color:'rgba(138, 138, 138, 1)'}}>
 					{route.title}
 				</Text>
 			)}

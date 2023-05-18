@@ -4,11 +4,11 @@ import image from '../assets/image.png';
 import chat from '../assets/chat.png';
 import like from '../assets/like.png';
 
-const CouncilCard = () => {
+const CouncilCard = ({navigation}) => {
   return (
     <View style={styles.container}>
 			<View style={styles.header}>
-				<Image source={council}/>
+				<TouchableOpacity onPress={() => navigation.navigate('학생회')}><Image source={council}/></TouchableOpacity>
 				<Text style={styles.name}>학생회</Text>
 				<Text style={styles.date}>2023.00.00</Text>
 			</View>

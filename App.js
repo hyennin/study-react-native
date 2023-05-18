@@ -3,12 +3,11 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './navigation/StackNavigator';
 import Council from './src/pages/councilPage';
-import TabViewExample from './src/pages/council';
+import School from './src/pages/schoolPage';
 
 export default function App() {
   return (
-    <Council/>
-    //   <MyStack/>
+    <School/>
   );
 }
 

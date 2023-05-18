@@ -23,7 +23,7 @@ const renderScene = SceneMap({
 	third: ThirdRoute
 });
 
-const TabViewExample = () => {
+const School = () => {
   const layout = useWindowDimensions();
 
   const [index, setIndex] = React.useState(0);
@@ -58,4 +58,4 @@ const TabViewExample = () => {
   );
 }
 
-export default TabViewExample;
+export default School;

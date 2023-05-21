@@ -1,17 +1,17 @@
 import { View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Profile from '../src/pages/profile';
-import Competition from '../src/pages/competition';
-import Community from '../src/pages/community';
-import BookBarcode from '../src/pages/bookBarcode';
-import MyPage from '../src/pages/mypage';
-import OnBoarding1 from '../src/pages/onBoarding1';
-import OnBoarding2 from '../src/pages/onBoarding2';
-import OnBoarding3 from '../src/pages/onBoarding3';
+import Profile from '../pages/profile';
+import Competition from '../pages/competition';
+import Community from '../pages/community';
+import BookBarcode from '../pages/bookBarcode';
+import MyPage from '../pages/mypage';
+import OnBoarding1 from '../pages/onBoarding1';
+import OnBoarding2 from '../pages/onBoarding2';
+import OnBoarding3 from '../pages/onBoarding3';
 import { NavigationContainer } from '@react-navigation/native';
-import Council from '../src/pages/councilPage';
-import School from '../src/pages/schoolPage';
-import CouncilCard from '../src/components/councilCard';
+import Council from '../pages/councilPage';
+import School from '../pages/schoolPage';
+import CouncilCard from '../components/councilCard';
 
 const Stack = createStackNavigator();
 
